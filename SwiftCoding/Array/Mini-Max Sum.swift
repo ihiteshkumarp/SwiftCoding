@@ -31,6 +31,7 @@ class Mini_Max_Sum: NSObject {
         let minSum = sum - max
         let maxSum = sum - min
         print("\(minSum) \(maxSum)")
+        // Expected Output: 10 14
     }
     
 }
