@@ -105,13 +105,13 @@
 			children = (
 				A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */,
 				A015C89F20A010F6000E31B4 /* Array */,
-				A015C89E20A010F6000E31B4 /* DP */,
-				A015C8A220A010F6000E31B4 /* Graph */,
-				A015C8A420A010F7000E31B4 /* LinkedList */,
-				A015C8A020A010F6000E31B4 /* Queue */,
+				A03732DF20A06E7600DD12C2 /* DP */,
+				A03732DB20A06E7600DD12C2 /* Graph */,
+				A03732DA20A06E7600DD12C2 /* LinkedList */,
+				A03732DC20A06E7600DD12C2 /* Queue */,
+				A03732DD20A06E7600DD12C2 /* Stack */,
+				A03732DE20A06E7600DD12C2 /* Tree */,
 				A015C8A320A010F7000E31B4 /* Sorting */,
-				A015C8A520A010F7000E31B4 /* Stack */,
-				A015C8A120A010F6000E31B4 /* Tree */,
 				A015C87020A01099000E31B4 /* AppDelegate.swift */,
 				A015C87220A01099000E31B4 /* ViewController.swift */,
 				A015C87420A01099000E31B4 /* Main.storyboard */,
@@ -140,40 +140,12 @@
 			path = SwiftCodingUITests;
 			sourceTree = "<group>";
 		};
-		A015C89E20A010F6000E31B4 /* DP */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DP;
-			sourceTree = "<group>";
-		};
 		A015C89F20A010F6000E31B4 /* Array */ = {
 			isa = PBXGroup;
 			children = (
 				A015C8A620A01109000E31B4 /* MaximunSubArray.swift */,
 			);
 			path = Array;
-			sourceTree = "<group>";
-		};
-		A015C8A020A010F6000E31B4 /* Queue */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Queue;
-			sourceTree = "<group>";
-		};
-		A015C8A120A010F6000E31B4 /* Tree */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tree;
-			sourceTree = "<group>";
-		};
-		A015C8A220A010F6000E31B4 /* Graph */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Graph;
 			sourceTree = "<group>";
 		};
 		A015C8A320A010F7000E31B4 /* Sorting */ = {
@@ -184,18 +156,46 @@
 			path = Sorting;
 			sourceTree = "<group>";
 		};
-		A015C8A420A010F7000E31B4 /* LinkedList */ = {
+		A03732DA20A06E7600DD12C2 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
-		A015C8A520A010F7000E31B4 /* Stack */ = {
+		A03732DB20A06E7600DD12C2 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		A03732DC20A06E7600DD12C2 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		A03732DD20A06E7600DD12C2 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		A03732DE20A06E7600DD12C2 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		A03732DF20A06E7600DD12C2 /* DP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
