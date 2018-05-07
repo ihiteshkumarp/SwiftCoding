@@ -9,17 +9,57 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var inputField: UITextField!
+    
+    @IBOutlet weak var getOutputButton: UIButton!
+    @IBOutlet weak var outputLabel: UILabel!
+    
+    let helloWord = PrintHelloWord()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func getOutputForInput(inputStr: String) -> String {
+        
+        var genericOutput: String?
+        
+        let helloWordOutput = helloWord.output(inputStr: inputStr)
+        
+        
+        genericOutput = helloWordOutput
+        guard let output = genericOutput else {
+            return "Not a valid Output received"
+        }
+        return output
     }
+    
+    private func bigSorting() {
+        let bigSort = BigSorting()
+        let outputArray = bigSort.bigSorting()
 
-
+//        for val in outputArray {
+//            outputStr = outputStr + val + "\n"
+//        }
+        let outputStr = outputArray.flatMap{ $0 }.joined(separator: "\n")
+        outputLabel.text = outputStr
+        
+    }
+    
+    @IBAction func outputButtonAction(_ sender: Any) {
+        
+        bigSorting()
+        return
+        
+        guard let str = inputField.text, str.count > 0 else {
+            outputLabel.text = "Enter a valid input"
+            return
+        }
+        outputLabel.text = getOutputForInput(inputStr: str)
+        
+    }
 }
 

@@ -14,6 +14,9 @@
 		A015C87B20A01099000E31B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A015C87920A01099000E31B4 /* LaunchScreen.storyboard */; };
 		A015C88620A0109A000E31B4 /* SwiftCodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015C88520A0109A000E31B4 /* SwiftCodingTests.swift */; };
 		A015C89120A0109A000E31B4 /* SwiftCodingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015C89020A0109A000E31B4 /* SwiftCodingUITests.swift */; };
+		A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015C8A620A01109000E31B4 /* MaximunSubArray.swift */; };
+		A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */; };
+		A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732D820A05FB000DD12C2 /* BigSorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A015C88C20A0109A000E31B4 /* SwiftCodingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCodingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A015C89020A0109A000E31B4 /* SwiftCodingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCodingUITests.swift; sourceTree = "<group>"; };
 		A015C89220A0109A000E31B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A015C8A620A01109000E31B4 /* MaximunSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximunSubArray.swift; sourceTree = "<group>"; };
+		A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintHelloWord.swift; sourceTree = "<group>"; };
+		A03732D820A05FB000DD12C2 /* BigSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSorting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,15 @@
 		A015C86F20A01099000E31B4 /* SwiftCoding */ = {
 			isa = PBXGroup;
 			children = (
+				A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */,
+				A015C89F20A010F6000E31B4 /* Array */,
+				A015C89E20A010F6000E31B4 /* DP */,
+				A015C8A220A010F6000E31B4 /* Graph */,
+				A015C8A420A010F7000E31B4 /* LinkedList */,
+				A015C8A020A010F6000E31B4 /* Queue */,
+				A015C8A320A010F7000E31B4 /* Sorting */,
+				A015C8A520A010F7000E31B4 /* Stack */,
+				A015C8A120A010F6000E31B4 /* Tree */,
 				A015C87020A01099000E31B4 /* AppDelegate.swift */,
 				A015C87220A01099000E31B4 /* ViewController.swift */,
 				A015C87420A01099000E31B4 /* Main.storyboard */,
@@ -123,6 +138,64 @@
 				A015C89220A0109A000E31B4 /* Info.plist */,
 			);
 			path = SwiftCodingUITests;
+			sourceTree = "<group>";
+		};
+		A015C89E20A010F6000E31B4 /* DP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DP;
+			sourceTree = "<group>";
+		};
+		A015C89F20A010F6000E31B4 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				A015C8A620A01109000E31B4 /* MaximunSubArray.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		A015C8A020A010F6000E31B4 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		A015C8A120A010F6000E31B4 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		A015C8A220A010F6000E31B4 /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Graph;
+			sourceTree = "<group>";
+		};
+		A015C8A320A010F7000E31B4 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				A03732D820A05FB000DD12C2 /* BigSorting.swift */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		A015C8A420A010F7000E31B4 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		A015C8A520A010F7000E31B4 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +332,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */,
+				A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */,
 				A015C87320A01099000E31B4 /* ViewController.swift in Sources */,
 				A015C87120A01099000E31B4 /* AppDelegate.swift in Sources */,
+				A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J488NNMFH6;
 				INFOPLIST_FILE = SwiftCoding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hiteshkumar.SwiftCoding;
@@ -441,6 +518,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J488NNMFH6;
 				INFOPLIST_FILE = SwiftCoding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hiteshkumar.SwiftCoding;
