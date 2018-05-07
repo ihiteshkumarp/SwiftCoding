@@ -17,6 +17,7 @@
 		A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015C8A620A01109000E31B4 /* MaximunSubArray.swift */; };
 		A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */; };
 		A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732D820A05FB000DD12C2 /* BigSorting.swift */; };
+		A03732E220A077BC00DD12C2 /* SumOfArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E120A077BC00DD12C2 /* SumOfArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A015C8A620A01109000E31B4 /* MaximunSubArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximunSubArray.swift; sourceTree = "<group>"; };
 		A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintHelloWord.swift; sourceTree = "<group>"; };
 		A03732D820A05FB000DD12C2 /* BigSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSorting.swift; sourceTree = "<group>"; };
+		A03732E120A077BC00DD12C2 /* SumOfArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfArray.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A015C8A820A03E7D000E31B4 /* PrintHelloWord.swift */,
+				A03732E020A0779D00DD12C2 /* SimpleOne */,
 				A015C89F20A010F6000E31B4 /* Array */,
 				A03732DF20A06E7600DD12C2 /* DP */,
 				A03732DB20A06E7600DD12C2 /* Graph */,
@@ -143,6 +146,7 @@
 		A015C89F20A010F6000E31B4 /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				A03732E120A077BC00DD12C2 /* SumOfArray.swift */,
 				A015C8A620A01109000E31B4 /* MaximunSubArray.swift */,
 			);
 			path = Array;
@@ -196,6 +200,13 @@
 			children = (
 			);
 			path = DP;
+			sourceTree = "<group>";
+		};
+		A03732E020A0779D00DD12C2 /* SimpleOne */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SimpleOne;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +347,7 @@
 				A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */,
 				A015C87320A01099000E31B4 /* ViewController.swift in Sources */,
 				A015C87120A01099000E31B4 /* AppDelegate.swift in Sources */,
+				A03732E220A077BC00DD12C2 /* SumOfArray.swift in Sources */,
 				A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
