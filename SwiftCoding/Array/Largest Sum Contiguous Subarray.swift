@@ -6,11 +6,9 @@
 //  Copyright © 2018 Hitesh Kumar. All rights reserved.
 //
 
-import UIKit
-
 // Kadane's algorithm
 
-class Largest_Sum_Contiguous_Subarray: NSObject {
+struct Largest_Sum_Contiguous_Subarray {
     
     let arr = [-2, -3, 4, -1, -2, 1, 5, -3, 4]
 
