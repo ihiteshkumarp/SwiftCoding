@@ -37,21 +37,10 @@ class ViewController: UIViewController {
         return output
     }
     
-    private func bigSorting() {
-        let bigSort = BigSorting()
-        let outputArray = bigSort.bigSorting()
-
-//        for val in outputArray {
-//            outputStr = outputStr + val + "\n"
-//        }
-        let outputStr = outputArray.flatMap{ $0 }.joined(separator: "\n")
-        outputLabel.text = outputStr
-        
-    }
-    
     @IBAction func outputButtonAction(_ sender: Any) {
         
-        bigSorting()
+        //bigSorting()
+        largestSumContiguousSubarray()
         return
         
         guard let str = inputField.text, str.count > 0 else {
@@ -60,6 +49,25 @@ class ViewController: UIViewController {
         }
         outputLabel.text = getOutputForInput(inputStr: str)
         
+    }
+    
+    // MARK: BigSorting
+    private func bigSorting() {
+        let bigSort = BigSorting()
+        let outputArray = bigSort.bigSorting()
+        
+        //        for val in outputArray {
+        //            outputStr = outputStr + val + "\n"
+        //        }
+        let outputStr = outputArray.flatMap{ $0 }.joined(separator: "\n")
+        outputLabel.text = outputStr
+        
+    }
+    
+    // MARK: Largest_Sum_Contiguous_Subarray
+    private func largestSumContiguousSubarray() {
+        let sum = Largest_Sum_Contiguous_Subarray()
+        outputLabel.text = sum.maxSubArraySum()
     }
 }
 

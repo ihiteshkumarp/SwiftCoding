@@ -20,6 +20,7 @@
 		A03732E220A077BC00DD12C2 /* SumOfArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E120A077BC00DD12C2 /* SumOfArray.swift */; };
 		A03732E420A0785300DD12C2 /* KeepSimpleCodeToRemember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */; };
 		A03732E620A0793300DD12C2 /* Mini-Max Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E520A0793300DD12C2 /* Mini-Max Sum.swift */; };
+		A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A03732E120A077BC00DD12C2 /* SumOfArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfArray.swift; sourceTree = "<group>"; };
 		A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepSimpleCodeToRemember.swift; sourceTree = "<group>"; };
 		A03732E520A0793300DD12C2 /* Mini-Max Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mini-Max Sum.swift"; sourceTree = "<group>"; };
+		A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Largest Sum Contiguous Subarray.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				A03732E120A077BC00DD12C2 /* SumOfArray.swift */,
 				A015C8A620A01109000E31B4 /* MaximunSubArray.swift */,
 				A03732E520A0793300DD12C2 /* Mini-Max Sum.swift */,
+				A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */,
 				A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */,
 				A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */,
 				A03732E620A0793300DD12C2 /* Mini-Max Sum.swift in Sources */,
