@@ -21,6 +21,7 @@
 		A03732E420A0785300DD12C2 /* KeepSimpleCodeToRemember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */; };
 		A03732E620A0793300DD12C2 /* Mini-Max Sum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E520A0793300DD12C2 /* Mini-Max Sum.swift */; };
 		A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */; };
+		A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepSimpleCodeToRemember.swift; sourceTree = "<group>"; };
 		A03732E520A0793300DD12C2 /* Mini-Max Sum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mini-Max Sum.swift"; sourceTree = "<group>"; };
 		A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Largest Sum Contiguous Subarray.swift"; sourceTree = "<group>"; };
+		A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 				A03732DC20A06E7600DD12C2 /* Queue */,
 				A03732DD20A06E7600DD12C2 /* Stack */,
 				A015C8A320A010F7000E31B4 /* Sorting */,
-				A03732DE20A06E7600DD12C2 /* Tree */,
+				A0CFCC5520A1C9C400F04150 /* Tree */,
 				A015C87020A01099000E31B4 /* AppDelegate.swift */,
 				A015C87220A01099000E31B4 /* ViewController.swift */,
 				A015C87420A01099000E31B4 /* Main.storyboard */,
@@ -196,13 +198,6 @@
 			path = Stack;
 			sourceTree = "<group>";
 		};
-		A03732DE20A06E7600DD12C2 /* Tree */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tree;
-			sourceTree = "<group>";
-		};
 		A03732DF20A06E7600DD12C2 /* DP */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +211,14 @@
 				A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */,
 			);
 			path = SimpleOne;
+			sourceTree = "<group>";
+		};
+		A0CFCC5520A1C9C400F04150 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +357,7 @@
 			files = (
 				A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */,
 				A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */,
+				A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */,
 				A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */,
 				A03732E620A0793300DD12C2 /* Mini-Max Sum.swift in Sources */,
 				A015C87320A01099000E31B4 /* ViewController.swift in Sources */,

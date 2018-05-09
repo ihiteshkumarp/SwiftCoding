@@ -40,7 +40,8 @@ class ViewController: UIViewController {
     @IBAction func outputButtonAction(_ sender: Any) {
         
         //bigSorting()
-        largestSumContiguousSubarray()
+//        largestSumContiguousSubarray()
+        traverseTree()
         return
         
         guard let str = inputField.text, str.count > 0 else {
@@ -69,5 +70,23 @@ class ViewController: UIViewController {
         let sum = Largest_Sum_Contiguous_Subarray()
         outputLabel.text = sum.maxSubArraySum()
     }
+    
+    // MARK: Tree Traversal
+    
+    private func traverseTree() {
+        
+        let tree = TreeTraversal()
+        let root = CreateTree().createBinaryTree()
+        print("PreOrder traversal: \n")
+        tree.preOrderTraversal(node: root)
+        
+        print("InOrder traversal: \n")
+        tree.inOrderTraversal(node: root)
+        
+        print("PostOrder traversal: \n")
+        tree.postOrderTraversal(node: root)
+
+    }
+    
 }
 
