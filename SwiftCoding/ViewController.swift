@@ -40,7 +40,9 @@ class ViewController: UIViewController {
         //bigSorting()
 //        largestSumContiguousSubarray()
 //        traverseTree()
-        createTree()
+//        createTree()
+        identicalTree()
+        
         return
         
         guard let str = inputField.text, str.count > 0 else {
@@ -75,7 +77,7 @@ class ViewController: UIViewController {
     private func traverseTree() {
         
         let tree = TreeTraversal()
-        let root = CreateTree().createBinaryTree()
+        let root = CreateTree.sharedInstance.createDummyBinaryTree1()
         print("PreOrder traversal: \n")
         tree.preOrderTraversal(node: root)
         
@@ -107,5 +109,18 @@ class ViewController: UIViewController {
         //  /  \      \
         // 1    7      50
     }
+    
+    // MARK: Tree Identical
+    
+    private func identicalTree() {
+        let root1 = CreateTree.sharedInstance.createDummyBinaryTree1()
+        let root2 = CreateTree.sharedInstance.createDummyBinaryTree1()
+//        let root2 = CreateTree.sharedInstance.createDummyBinaryTree2()
+        
+        let identical = TreesIdentical().checkTreesIdentical(root1: root1, root2: root2)
+        outputLabel.text = "\(identical)"
+        print(identical)
+    }
+        
 }
 

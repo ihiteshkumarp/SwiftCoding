@@ -6,32 +6,6 @@
 //  Copyright © 2018 Hitesh Kumar. All rights reserved.
 //
 
-enum BinaryTree<T> {
-    case empty
-    indirect case node(BinaryTree, T, BinaryTree)
-}
-
-
-class CreateTree {
-    
-    // Change this to string, if want to deal with stringss
-//    func createBinaryTree() -> Node<String> {
-    
-    func createBinaryTree() -> Node<Int> {
-
-//        let rootNode = BinaryTree.node(.empty, "1", .empty)
-//        let secondNode = BinaryTree.node(.empty, "1", .empty)
-        
-        let myNode = Node(value: 1)
-        myNode.left = Node(value: 2)
-        myNode.right = Node(value: 3)
-        myNode.left?.left = Node(value: 4)
-        myNode.left?.right = Node(value: 5)
-
-        return myNode
-    }
-}
-
 class TreeTraversal {
     
     func inOrderTraversal(node: Node<Int>?) {
