@@ -45,10 +45,10 @@ class CreateTree {
     func createDummyBinaryTree2() -> Node<Int> {
         
         let root = Node(value: 1)
-        root.right = Node(value: 2)
         root.left = Node(value: 3)
-        root.right?.right = Node(value: 4)
+        root.right = Node(value: 2)
         root.right?.left = Node(value: 5)
+        root.right?.right = Node(value: 4)
         
         return root
     }

@@ -41,7 +41,8 @@ class ViewController: UIViewController {
 //        largestSumContiguousSubarray()
 //        traverseTree()
 //        createTree()
-        identicalTree()
+//        identicalTree()
+        mirrorTree()
         
         return
         
@@ -114,12 +115,22 @@ class ViewController: UIViewController {
     
     private func identicalTree() {
         let root1 = CreateTree.sharedInstance.createDummyBinaryTree1()
-        let root2 = CreateTree.sharedInstance.createDummyBinaryTree1()
-//        let root2 = CreateTree.sharedInstance.createDummyBinaryTree2()
+//        let root2 = CreateTree.sharedInstance.createDummyBinaryTree1()
+        let root2 = CreateTree.sharedInstance.createDummyBinaryTree2()
         
         let identical = TreesIdentical().checkTreesIdentical(root1: root1, root2: root2)
         outputLabel.text = "\(identical)"
         print(identical)
+    }
+    
+    private func mirrorTree() {
+        let root1 = CreateTree.sharedInstance.createDummyBinaryTree1()
+//        let root2 = CreateTree.sharedInstance.createDummyBinaryTree1()
+        let root2 = CreateTree.sharedInstance.createDummyBinaryTree2()
+        
+        let mirror = TreesMirror().checkTreesMirror(root1: root1, root2: root2)
+        outputLabel.text = "\(mirror)"
+        print(mirror)
     }
         
 }
