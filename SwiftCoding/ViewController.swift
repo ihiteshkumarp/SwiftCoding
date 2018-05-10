@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
     }
     
     private func getOutputForInput(inputStr: String) -> String {
@@ -41,7 +39,8 @@ class ViewController: UIViewController {
         
         //bigSorting()
 //        largestSumContiguousSubarray()
-        traverseTree()
+//        traverseTree()
+        createTree()
         return
         
         guard let str = inputField.text, str.count > 0 else {
@@ -88,5 +87,25 @@ class ViewController: UIViewController {
 
     }
     
+    // MARK: Create Tree
+    
+    private func createTree() {
+        let tree = CreateBinaryTree()
+        let root = Node(value: 10)
+        
+        tree.createBinarySearchTree(root: root, data: 5)
+        tree.createBinarySearchTree(root: root, data: 40)
+        tree.createBinarySearchTree(root: root, data: 7)
+        tree.createBinarySearchTree(root: root, data: 50)
+        tree.createBinarySearchTree(root: root, data: 1)
+        
+        TreeTraversal().inOrderTraversal(node: root)
+
+        //     10
+        //    /   \
+        //   5     40
+        //  /  \      \
+        // 1    7      50
+    }
 }
 

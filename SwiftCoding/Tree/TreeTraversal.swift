@@ -6,16 +6,6 @@
 //  Copyright © 2018 Hitesh Kumar. All rights reserved.
 //
 
-class Node<T> {
-    var value: T
-    var left: Node?
-    var right: Node?
-    
-    init(value: T) {
-        self.value = value
-    }
-}
-
 enum BinaryTree<T> {
     case empty
     indirect case node(BinaryTree, T, BinaryTree)
@@ -24,15 +14,19 @@ enum BinaryTree<T> {
 
 class CreateTree {
     
-    func createBinaryTree() -> Node<String> {
+    // Change this to string, if want to deal with stringss
+//    func createBinaryTree() -> Node<String> {
+    
+    func createBinaryTree() -> Node<Int> {
+
 //        let rootNode = BinaryTree.node(.empty, "1", .empty)
 //        let secondNode = BinaryTree.node(.empty, "1", .empty)
         
-        let myNode = Node(value: "1")
-        myNode.left = Node(value: "2")
-        myNode.right = Node(value: "3")
-        myNode.left?.left = Node(value: "4")
-        myNode.left?.right = Node(value: "5")
+        let myNode = Node(value: 1)
+        myNode.left = Node(value: 2)
+        myNode.right = Node(value: 3)
+        myNode.left?.left = Node(value: 4)
+        myNode.left?.right = Node(value: 5)
 
         return myNode
     }
@@ -40,7 +34,7 @@ class CreateTree {
 
 class TreeTraversal {
     
-    func inOrderTraversal(node: Node<String>?) {
+    func inOrderTraversal(node: Node<Int>?) {
         
         guard let node = node else {
             return
@@ -55,7 +49,7 @@ class TreeTraversal {
         }
     }
     
-    func preOrderTraversal(node: Node<String>?) {
+    func preOrderTraversal(node: Node<Int>?) {
         guard let node = node else {
             return
         }
@@ -70,7 +64,7 @@ class TreeTraversal {
         }
     }
     
-    func postOrderTraversal(node: Node<String>?) {
+    func postOrderTraversal(node: Node<Int>?) {
         
         guard let node = node else {
             return
