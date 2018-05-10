@@ -42,7 +42,8 @@ class ViewController: UIViewController {
 //        traverseTree()
 //        createTree()
 //        identicalTree()
-        mirrorTree()
+//        mirrorTree()
+        printLeafNodes()
         
         return
         
@@ -123,6 +124,7 @@ class ViewController: UIViewController {
         print(identical)
     }
     
+    // MARK: Tree Mirror
     private func mirrorTree() {
         let root1 = CreateTree.sharedInstance.createDummyBinaryTree1()
 //        let root2 = CreateTree.sharedInstance.createDummyBinaryTree1()
@@ -131,6 +133,18 @@ class ViewController: UIViewController {
         let mirror = TreesMirror().checkTreesMirror(root1: root1, root2: root2)
         outputLabel.text = "\(mirror)"
         print(mirror)
+    }
+    
+    // MARK: Leaf nodes
+    private func printLeafNodes() {
+        let root1 = CreateTree.sharedInstance.createDummyBinaryTree3()
+        let root2 = CreateTree.sharedInstance.createDummyBinaryTree4()
+        let root3 = CreateTree.sharedInstance.createBST1()
+        
+        LeafNodes().printLeafNodes(node: root1)
+        LeafNodes().printLeafNodes(node: root2)
+        print("For Binary Tree: \n")
+        LeafNodes().printLeafNodes(node: root3)
     }
         
 }

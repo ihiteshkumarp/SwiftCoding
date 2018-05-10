@@ -53,6 +53,34 @@ class CreateTree {
         return root
     }
     
+    func createDummyBinaryTree3() -> Node<Int> {
+        
+        let root = Node(value: 1)
+        root.left = Node(value: 2)
+        root.right = Node(value: 3)
+        root.left?.left = Node(value: 4)
+        root.right?.right = Node(value: 5)
+        
+        return root
+//        / \
+//        /    \
+//        "4"  "5"
+    }
+    
+    func createDummyBinaryTree4() -> Node<Int> {
+        
+        let root = Node(value: 1)
+        root.left = Node(value: 2)
+        root.right = Node(value: 5)
+        root.left?.left = Node(value: 4)
+//        root.right?.right = Node(value: 5)
+        
+        return root
+//          / \
+//         /   "5"
+//        "4"
+    }
+    
     func createBST1() -> Node<Int> {
         let tree = CreateBinaryTree()
         let root = Node(value: 10)
