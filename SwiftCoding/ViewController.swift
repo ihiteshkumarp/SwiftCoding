@@ -150,8 +150,10 @@ class ViewController: UIViewController {
 
     // MAEK: Fibonacci Numbers
     private func fibonacciNumbers() {
-        let num = FibonacciNumbers().fib(9)
-//        let num = FibonacciNumbers().fibUsingDP(9)
+//        let num = FibonacciNumbers().fib(9)
+//        let num = FibonacciNumbers().fibUsingDP1(9)
+        let num = FibonacciNumbers().fibUsingDP2(9)
+
         outputLabel.text = "\(num)"
     }
 }
