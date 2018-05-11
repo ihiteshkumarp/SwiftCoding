@@ -43,7 +43,8 @@ class ViewController: UIViewController {
 //        createTree()
 //        identicalTree()
 //        mirrorTree()
-        printLeafNodes()
+//        printLeafNodes()
+        fibonacciNumbers()
         
         return
         
@@ -146,6 +147,12 @@ class ViewController: UIViewController {
         print("For Binary Tree: \n")
         LeafNodes().printLeafNodes(node: root3)
     }
-        
+
+    // MAEK: Fibonacci Numbers
+    private func fibonacciNumbers() {
+        let num = FibonacciNumbers().fib(9)
+//        let num = FibonacciNumbers().fibUsingDP(9)
+        outputLabel.text = "\(num)"
+    }
 }
 
