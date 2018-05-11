@@ -21,10 +21,7 @@ class LIS {
     /// Simple recursive implementation of the LIS problem
     
     func getLIS(arr: [Int], n: Int, max_ref: inout Int) -> Int {
-//        guard n != 1 else {
-//            return 1
-//        }
-        
+
         if n == 1 {
             return 1
         }
