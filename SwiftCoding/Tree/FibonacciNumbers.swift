@@ -10,8 +10,8 @@ import UIKit
 
 class FibonacciNumbers {
     
+    /// Recursive solution
     /// 1) Overlapping Subproblems:
-    /// Recursion
     func fib(_ num: Int) -> Int {
         guard num > 1 else {
             return num;
@@ -19,6 +19,7 @@ class FibonacciNumbers {
         return fib(num - 1) + fib(num - 2)
     }
     
+    ///Memoized solution
     /// Fibonacci using DP
     /// There are following two different ways to store the values so that these values can be reused:
     /// a) Memoization (Top Down)
@@ -40,7 +41,7 @@ class FibonacciNumbers {
         
         return lookup[num]
     }
-    
+    /// Tabulated solution
     /// b) Tabulation (Bottom Up):
     func fibUsingDP2(_ n: Int) -> Int {
         var fib = Array(repeating: -1, count: n + 1)
