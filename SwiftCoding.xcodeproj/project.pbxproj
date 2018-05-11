@@ -26,6 +26,8 @@
 		A0C0ED2420A43F6100EB10E9 /* TreesMirror.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0ED2320A43F6100EB10E9 /* TreesMirror.swift */; };
 		A0C0ED2620A45DBD00EB10E9 /* LeafNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0ED2520A45DBD00EB10E9 /* LeafNodes.swift */; };
 		A0C0ED2920A543A100EB10E9 /* FibonacciNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0ED2820A543A100EB10E9 /* FibonacciNumbers.swift */; };
+		A0C0ED2B20A54E8800EB10E9 /* LIS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0ED2A20A54E8800EB10E9 /* LIS.swift */; };
+		A0C0ED2D20A5893200EB10E9 /* ArrayRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C0ED2C20A5893200EB10E9 /* ArrayRotate.swift */; };
 		A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */; };
 		A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		A0C0ED2320A43F6100EB10E9 /* TreesMirror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreesMirror.swift; sourceTree = "<group>"; };
 		A0C0ED2520A45DBD00EB10E9 /* LeafNodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeafNodes.swift; sourceTree = "<group>"; };
 		A0C0ED2820A543A100EB10E9 /* FibonacciNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FibonacciNumbers.swift; path = SwiftCoding/Tree/FibonacciNumbers.swift; sourceTree = SOURCE_ROOT; };
+		A0C0ED2A20A54E8800EB10E9 /* LIS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LIS.swift; path = SwiftCoding/Tree/LIS.swift; sourceTree = SOURCE_ROOT; };
+		A0C0ED2C20A5893200EB10E9 /* ArrayRotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayRotate.swift; sourceTree = "<group>"; };
 		A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Largest Sum Contiguous Subarray.swift"; sourceTree = "<group>"; };
 		A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,6 +171,7 @@
 				A015C8A620A01109000E31B4 /* MaximunSubArray.swift */,
 				A03732E520A0793300DD12C2 /* Mini-Max Sum.swift */,
 				A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */,
+				A0C0ED2C20A5893200EB10E9 /* ArrayRotate.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C0ED2820A543A100EB10E9 /* FibonacciNumbers.swift */,
+				A0C0ED2A20A54E8800EB10E9 /* LIS.swift */,
 			);
 			path = DP;
 			sourceTree = "<group>";
@@ -383,11 +389,13 @@
 			files = (
 				A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */,
 				A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */,
+				A0C0ED2B20A54E8800EB10E9 /* LIS.swift in Sources */,
 				A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */,
 				A0C0ED2020A43A6300EB10E9 /* TreesIdentical.swift in Sources */,
 				A0C0ED1E20A4321600EB10E9 /* CreateBinaryTree.swift in Sources */,
 				A0C0ED2220A43D9F00EB10E9 /* CreateTree.swift in Sources */,
 				A0C0ED2420A43F6100EB10E9 /* TreesMirror.swift in Sources */,
+				A0C0ED2D20A5893200EB10E9 /* ArrayRotate.swift in Sources */,
 				A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */,
 				A03732E620A0793300DD12C2 /* Mini-Max Sum.swift in Sources */,
 				A015C87320A01099000E31B4 /* ViewController.swift in Sources */,

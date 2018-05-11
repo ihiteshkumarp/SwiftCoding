@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class SumOfArray: NSObject {
+class SumOfArray {
     
     func output() -> Int {
         let arr = [1, 2, 3, 4, 10, 11]

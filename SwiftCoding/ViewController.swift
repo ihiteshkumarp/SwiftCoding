@@ -44,7 +44,9 @@ class ViewController: UIViewController {
 //        identicalTree()
 //        mirrorTree()
 //        printLeafNodes()
-        fibonacciNumbers()
+//        fibonacciNumbers()
+//        longestSubsequence()
+        rotateArray()
         
         return
         
@@ -148,13 +150,25 @@ class ViewController: UIViewController {
         LeafNodes().printLeafNodes(node: root3)
     }
 
-    // MAEK: Fibonacci Numbers
+    // MARK: Fibonacci Numbers
     private func fibonacciNumbers() {
 //        let num = FibonacciNumbers().fib(9)
 //        let num = FibonacciNumbers().fibUsingDP1(9)
         let num = FibonacciNumbers().fibUsingDP2(9)
 
         outputLabel.text = "\(num)"
+    }
+    
+    // MARK: LIS
+    
+    private func longestSubsequence() {
+        let res = LIS().longestIncreasingSubsequence()
+        outputLabel.text = "\(res)"
+    }
+    
+    // MARK: Array Rotate
+    private func rotateArray() {
+        ArrayRotate().rotateArray(2)
     }
 }
 
