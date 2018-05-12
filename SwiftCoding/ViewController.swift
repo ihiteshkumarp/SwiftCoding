@@ -45,7 +45,7 @@ class ViewController: UIViewController {
 //        mirrorTree()
 //        printLeafNodes()
 //        fibonacciNumbers()
-//        longestSubsequence()
+        longestSubsequence()
 //        rotateArray()
         
         return

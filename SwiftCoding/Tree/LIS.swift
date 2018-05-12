@@ -14,11 +14,13 @@ class LIS {
         let arr = [10, 22, 9, 33, 21, 50, 41, 60]
         var max = 1
         _ = getLIS(arr: arr, n: arr.count, max_ref: &max)
+        max = getLIS_DP(arr: arr)
         return max
         
     }
     
     /// Simple recursive implementation of the LIS problem
+    /// Recursion
     
     func getLIS(arr: [Int], n: Int, max_ref: inout Int) -> Int {
 
@@ -43,4 +45,33 @@ class LIS {
         
         return max_ending_here
     }
+    
+    /// Tabluated
+    /// DP
+    func getLIS_DP(arr: [Int]) -> Int {
+        
+        let n = arr.count
+        var LIS = Array(repeatElement(1, count: n))
+        
+        for i in 0 ..< n {
+            for j in 0 ..< i {
+                if arr[j] < arr[i] {
+                    let newCount = LIS[j] + 1
+                    if newCount > LIS[i] {
+                        LIS[i] = newCount
+                    }
+                }
+            }
+        }
+        var max = 0
+        for obj in LIS {
+            if obj > max {
+                max = obj
+            }
+        }
+        
+        return max
+    }
+
+    
 }
