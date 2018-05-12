@@ -221,7 +221,9 @@ class ViewController: UIViewController {
         let arr2 = [0, 1, 1, 2, 3 ]
 //        let arr1 = [1, 4, 5, 8, 9, 11]
 //        let arr2 = [9, 11, 1, 4, 5, 8]
-        let isRorated = obj.isRotationOfAnother(arr1: arr1, arr2: arr2)
+//        let isRorated = obj.isRotationOfAnother(arr1: arr1, arr2: arr2)
+        
+        let isRorated = obj.isRotationOfAnotherString(arr1: "ABACD", arr2: "CDABA")
         
         guard isRorated else {
             outputLabel.text = "No"
