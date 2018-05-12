@@ -175,7 +175,13 @@ class ViewController: UIViewController {
     // MARK: First Repeting Char
     private func firstRepetingChar() {
         let obj = FirstRepetingChar()
-        guard let output = obj.firstRepetingChar(str: "DBCABA") else {
+//        guard let output = obj.firstRepetingChar(str: "DBCABA") else {
+//            outputLabel.text = "No char"
+//            return
+//        }
+        
+        let nonObj = FirstNonRepetingChar()
+        guard let output = nonObj.firstNonRepetingChar(str: "geeksforgeeks") else {
             outputLabel.text = "No char"
             return
         }
