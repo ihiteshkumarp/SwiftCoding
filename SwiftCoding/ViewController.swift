@@ -47,7 +47,8 @@ class ViewController: UIViewController {
 //        fibonacciNumbers()
 //        longestSubsequence()
 //        rotateArray()
-        firstRepetingChar()
+//        firstRepetingChar()
+        frequentlyOccurringItem()
         
         return
         
@@ -187,6 +188,19 @@ class ViewController: UIViewController {
 //        }
         
         outputLabel.text = "\(output)"
+    }
+    
+    // MARK: FrequentlyOccurringItem
+    private func frequentlyOccurringItem() {
+        let obj = FrequentlyOccurringItem()
+//        let output = obj.mostFrequestItem([10, 20, 10, 20, 30, 20, 20])
+        let output = obj.mostFrequestItemUsingDict([10, 20, 10, 20, 30, 20, 20])
+        
+        guard output > 0 else {
+            outputLabel.text = "No output"
+            return
+        }
+       outputLabel.text = "\(output)"
     }
 }
 
