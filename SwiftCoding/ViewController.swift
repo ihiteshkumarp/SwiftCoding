@@ -45,8 +45,9 @@ class ViewController: UIViewController {
 //        mirrorTree()
 //        printLeafNodes()
 //        fibonacciNumbers()
-        longestSubsequence()
+//        longestSubsequence()
 //        rotateArray()
+        firstRepetingChar()
         
         return
         
@@ -169,6 +170,17 @@ class ViewController: UIViewController {
     // MARK: Array Rotate
     private func rotateArray() {
         ArrayRotate().rotateArray(2)
+    }
+    
+    // MARK: First Repeting Char
+    private func firstRepetingChar() {
+        let obj = FirstRepetingChar()
+        guard let output = obj.firstRepetingChar(str: "DBCABA") else {
+            outputLabel.text = "No char"
+            return
+        }
+        
+        outputLabel.text = "\(output)"
     }
 }
 
