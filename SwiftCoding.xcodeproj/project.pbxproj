@@ -19,6 +19,8 @@
 		A032BE0820A7163F00E0D444 /* FirstRepetingChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032BE0720A7163F00E0D444 /* FirstRepetingChar.swift */; };
 		A032BE0A20A71A0B00E0D444 /* FirstNonRepetingChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032BE0920A71A0B00E0D444 /* FirstNonRepetingChar.swift */; };
 		A032BE0C20A7213E00E0D444 /* FrequentlyOccurringItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032BE0B20A7213E00E0D444 /* FrequentlyOccurringItem.swift */; };
+		A032BE0E20A7247600E0D444 /* CommonElementsInSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032BE0D20A7247500E0D444 /* CommonElementsInSortedArrays.swift */; };
+		A032BE1020A72DFB00E0D444 /* RotationOfAnother.swift in Sources */ = {isa = PBXBuildFile; fileRef = A032BE0F20A72DFB00E0D444 /* RotationOfAnother.swift */; };
 		A03732D920A05FB000DD12C2 /* BigSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732D820A05FB000DD12C2 /* BigSorting.swift */; };
 		A03732E220A077BC00DD12C2 /* SumOfArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E120A077BC00DD12C2 /* SumOfArray.swift */; };
 		A03732E420A0785300DD12C2 /* KeepSimpleCodeToRemember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */; };
@@ -71,6 +73,8 @@
 		A032BE0720A7163F00E0D444 /* FirstRepetingChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRepetingChar.swift; sourceTree = "<group>"; };
 		A032BE0920A71A0B00E0D444 /* FirstNonRepetingChar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNonRepetingChar.swift; sourceTree = "<group>"; };
 		A032BE0B20A7213E00E0D444 /* FrequentlyOccurringItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyOccurringItem.swift; sourceTree = "<group>"; };
+		A032BE0D20A7247500E0D444 /* CommonElementsInSortedArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonElementsInSortedArrays.swift; sourceTree = "<group>"; };
+		A032BE0F20A72DFB00E0D444 /* RotationOfAnother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationOfAnother.swift; sourceTree = "<group>"; };
 		A03732D820A05FB000DD12C2 /* BigSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigSorting.swift; sourceTree = "<group>"; };
 		A03732E120A077BC00DD12C2 /* SumOfArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumOfArray.swift; sourceTree = "<group>"; };
 		A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepSimpleCodeToRemember.swift; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 				A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */,
 				A0C0ED2C20A5893200EB10E9 /* ArrayRotate.swift */,
 				A032BE0B20A7213E00E0D444 /* FrequentlyOccurringItem.swift */,
+				A032BE0D20A7247500E0D444 /* CommonElementsInSortedArrays.swift */,
+				A032BE0F20A72DFB00E0D444 /* RotationOfAnother.swift */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -405,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */,
+				A032BE1020A72DFB00E0D444 /* RotationOfAnother.swift in Sources */,
 				A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */,
 				A0C0ED2B20A54E8800EB10E9 /* LIS.swift in Sources */,
 				A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */,
@@ -421,6 +428,7 @@
 				A015C87120A01099000E31B4 /* AppDelegate.swift in Sources */,
 				A0C0ED2920A543A100EB10E9 /* FibonacciNumbers.swift in Sources */,
 				A03732E220A077BC00DD12C2 /* SumOfArray.swift in Sources */,
+				A032BE0E20A7247600E0D444 /* CommonElementsInSortedArrays.swift in Sources */,
 				A03732E420A0785300DD12C2 /* KeepSimpleCodeToRemember.swift in Sources */,
 				A032BE0820A7163F00E0D444 /* FirstRepetingChar.swift in Sources */,
 				A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */,

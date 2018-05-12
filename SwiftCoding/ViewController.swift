@@ -48,7 +48,9 @@ class ViewController: UIViewController {
 //        longestSubsequence()
 //        rotateArray()
 //        firstRepetingChar()
-        frequentlyOccurringItem()
+//        frequentlyOccurringItem()
+//        commonElementsInSortedArrays()
+        rotationOfAnother()
         
         return
         
@@ -201,6 +203,31 @@ class ViewController: UIViewController {
             return
         }
        outputLabel.text = "\(output)"
+    }
+    
+    //MARK: CommonElementsInSortedArrays
+    private func commonElementsInSortedArrays() {
+        let obj = CommonElementsInSortedArrays()
+        let arr1 = [1, 4, 5, 8, 9, 11]
+        let arr2 = [2, 5, 8, 10, 11, 15]
+        let output = obj.commentElementsFromSortedArrays(arr1: arr1, arr2: arr2)
+        print(output)
+    }
+    
+    // MARK: RotationOfAnother
+    private func rotationOfAnother() {
+        let obj = RotationOfAnother()
+        let arr1 = [0, 1, 2, 3, 0]
+        let arr2 = [0, 1, 1, 2, 3 ]
+//        let arr1 = [1, 4, 5, 8, 9, 11]
+//        let arr2 = [9, 11, 1, 4, 5, 8]
+        let isRorated = obj.isRotationOfAnother(arr1: arr1, arr2: arr2)
+        
+        guard isRorated else {
+            outputLabel.text = "No"
+            return
+        }
+        outputLabel.text = "Yes"
     }
 }
 
