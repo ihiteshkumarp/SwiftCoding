@@ -12,9 +12,14 @@ class LIS {
     
     func longestIncreasingSubsequence() -> Int {
         let arr = [10, 22, 9, 33, 21, 50, 41, 60]
+//        let arr = [2, 5, 3, 7, 11, 8, 10, 13, 9]
+//        let arr = [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15, 89]
         var max = 1
-        _ = getLIS(arr: arr, n: arr.count, max_ref: &max)
-        max = getLIS_DP(arr: arr)
+//        _ = getLIS(arr: arr, n: arr.count, max_ref: &max)
+//        max = getLIS_DP(arr: arr)
+        
+        max = longestSubsequence(arr: arr)
+        
         return max
         
     }
@@ -72,6 +77,48 @@ class LIS {
         
         return max
     }
-
     
+    /// Longest Increasing Subsequence (N log N)
+    
+    func longestSubsequence(arr: [Int]) -> Int {
+        guard arr.count > 0 else {
+            return 0
+        }
+        var output = [Int]()
+        output.append(arr[0])
+        var index = 1
+        for i in 1 ..< arr.count {
+            if arr[i] < output[0] {
+                output[0] = arr[i]
+            } else if arr[i] > output[index - 1] {
+                output.append(arr[i])
+                index += 1
+                
+            } else {
+                let ceil = ceilIndex(output, data: arr[i], low: 0, high: index - 1)
+                output[ceil] = arr[i]
+            }
+        }
+        print(output)
+        return output.count
+    }
+    
+    // Binary search (note boundaries in the caller)
+    
+    func ceilIndex(_ arr: [Int], data: Int, low: Int, high: Int) -> Int {
+        var high = high
+        var low = low
+        
+        while (high - low > 1) {
+            let mid = low + (high - low)/2;
+            if (arr[mid] >= data) {
+                high = mid
+            } else {
+                low = mid
+            }
+        }
+        
+        return high
+    }
+
 }
