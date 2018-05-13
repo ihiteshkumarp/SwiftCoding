@@ -47,7 +47,7 @@ class LIS {
     }
     
     /// Tabluated
-    /// DP
+    /// DP - O(n^2)
     func getLIS_DP(arr: [Int]) -> Int {
         
         let n = arr.count

@@ -50,7 +50,8 @@ class ViewController: UIViewController {
 //        firstRepetingChar()
 //        frequentlyOccurringItem()
 //        commonElementsInSortedArrays()
-        rotationOfAnother()
+//        rotationOfAnother()
+        binarySearch()
         
         return
         
@@ -230,6 +231,20 @@ class ViewController: UIViewController {
             return
         }
         outputLabel.text = "Yes"
+    }
+    
+    // MARK: Binary search in array
+    
+    private func binarySearch() {
+        let obj = BinarySearch()
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8]
+        var input = 0
+        if let text = inputField.text, let data = Int(text) {
+            input = data
+        }
+        let sear = obj.searchElement(arr: arr, data: input, l: 0, r: arr.count - 1)
+        
+        outputLabel.text = "\(sear)"
     }
 }
 

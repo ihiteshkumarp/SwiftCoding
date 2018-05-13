@@ -35,6 +35,9 @@ class RotationOfAnother {
         return true
     }
     
+    /// This is same as array
+    /// Other sulution using merge first string two times and check if second is substring of merged string
+    /// https://www.geeksforgeeks.org/a-program-to-check-if-strings-are-rotations-of-each-other/
     func isRotationOfAnotherString(arr1: String, arr2: String) -> Bool {
         
         guard arr1.count == arr2.count else {
@@ -44,6 +47,7 @@ class RotationOfAnother {
         
         var startIndex = 0
         for i in 0 ..< size {
+            
             if arr1[arr1.index(arr1.startIndex, offsetBy: i)] == arr2[arr2.index(arr2.startIndex, offsetBy: i)] {
                 startIndex = i
                 break
