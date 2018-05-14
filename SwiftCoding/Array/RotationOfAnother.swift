@@ -48,7 +48,7 @@ class RotationOfAnother {
         var startIndex = 0
         for i in 0 ..< size {
             // Using extension "stringIndex"
-            if arr1[arr1.stringIndex(arr1, index: i)] == arr2[arr2.stringIndex(arr2, index: i)] {
+            if arr1[arr1.stringIndex(i)] == arr2[arr2.stringIndex(i)] {
                 startIndex = i
                 break
             }
@@ -56,7 +56,7 @@ class RotationOfAnother {
         
         for i in startIndex  ..< size {
             // Using extension "characterAtIndex"
-            if arr1.characterAtIndex(arr1, index: i - startIndex) != arr2.characterAtIndex(arr2, index: i) {
+            if arr1.characterAtIndex(i - startIndex) != arr2.characterAtIndex(i) {
                 return false
             }
         }

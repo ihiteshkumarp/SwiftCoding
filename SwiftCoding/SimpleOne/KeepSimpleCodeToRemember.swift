@@ -14,6 +14,9 @@ import Foundation
     func stringIndex(str: String, index: Int) -> String.Index {
         return str.index(str.startIndex, offsetBy: index)
     }
+     subscript (i: Int) -> Character {
+        return self[index(startIndex, offsetBy: i)]
+     }
 
     // Array Sum
     let arr = [Int]()
@@ -56,7 +59,12 @@ import Foundation
         }
     }
  
-    // 
+    // 2D Array
+     var arr = Array(repeatElement(Array(repeatElement(0, count: 2)), count: 3))
+     arr[2][1] = 3
+     [[0, 3],
+     [0, 0],
+     [0, 0]]
  
  
     */

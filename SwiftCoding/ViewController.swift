@@ -50,8 +50,10 @@ class ViewController: UIViewController {
 //        firstRepetingChar()
 //        frequentlyOccurringItem()
 //        commonElementsInSortedArrays()
-        rotationOfAnother()
+//        rotationOfAnother()
 //        binarySearch()
+//        longestSubstringCommonCharacters()
+        lcs()
         
         return
         
@@ -246,5 +248,23 @@ class ViewController: UIViewController {
         
         outputLabel.text = "\(sear)"
     }
+    
+    // MARK: LongestSubstringCommonCharacters
+    
+    private func longestSubstringCommonCharacters() {
+        let obj = LongestSubstringCommonCharacters()
+        obj.longestSubstring("aabacbebebe", k: 2)
+    }
+    
+    // MARK: LCS
+    private func lcs() {
+        let obj = LCS()
+        let str1 = "AGGTAB"
+        let str2 = "GXTXAYB"
+        let result = obj.getLCS(str1: str1, str2: str2, m: str1.count, n: str2.count)
+        let result1 = obj.lcsDP(str1: str1, str2: str2)
+        outputLabel.text = "\(result1)"
+    }
+    
 }
 

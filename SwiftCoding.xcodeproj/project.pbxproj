@@ -37,6 +37,8 @@
 		A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */; };
 		A0F449A320A832C800152ADE /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A220A832C800152ADE /* BinarySearch.swift */; };
 		A0F449A520A9939500152ADE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A420A9939500152ADE /* StringExtensions.swift */; };
+		A0F449A720A99F7E00152ADE /* LongestSubstringCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A620A99F7E00152ADE /* LongestSubstringCommonCharacters.swift */; };
+		A0F449A920A9B75800152ADE /* LCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A820A9B75800152ADE /* LCS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
 		A0F449A220A832C800152ADE /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		A0F449A420A9939500152ADE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		A0F449A620A99F7E00152ADE /* LongestSubstringCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringCommonCharacters.swift; sourceTree = "<group>"; };
+		A0F449A820A9B75800152ADE /* LCS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,9 +210,11 @@
 		A032BE0620A7162D00E0D444 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				A0F449A420A9939500152ADE /* StringExtensions.swift */,
 				A032BE0720A7163F00E0D444 /* FirstRepetingChar.swift */,
 				A032BE0920A71A0B00E0D444 /* FirstNonRepetingChar.swift */,
-				A0F449A420A9939500152ADE /* StringExtensions.swift */,
+				A0F449A620A99F7E00152ADE /* LongestSubstringCommonCharacters.swift */,
+				A0F449A820A9B75800152ADE /* LCS.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				A03732E620A0793300DD12C2 /* Mini-Max Sum.swift in Sources */,
 				A015C87320A01099000E31B4 /* ViewController.swift in Sources */,
 				A015C87120A01099000E31B4 /* AppDelegate.swift in Sources */,
+				A0F449A720A99F7E00152ADE /* LongestSubstringCommonCharacters.swift in Sources */,
 				A0C0ED2920A543A100EB10E9 /* FibonacciNumbers.swift in Sources */,
 				A03732E220A077BC00DD12C2 /* SumOfArray.swift in Sources */,
 				A032BE0E20A7247600E0D444 /* CommonElementsInSortedArrays.swift in Sources */,
@@ -440,6 +447,7 @@
 				A032BE0820A7163F00E0D444 /* FirstRepetingChar.swift in Sources */,
 				A0F449A520A9939500152ADE /* StringExtensions.swift in Sources */,
 				A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */,
+				A0F449A920A9B75800152ADE /* LCS.swift in Sources */,
 				A0C0ED2620A45DBD00EB10E9 /* LeafNodes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
