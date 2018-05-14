@@ -53,7 +53,8 @@ class ViewController: UIViewController {
 //        rotationOfAnother()
 //        binarySearch()
 //        longestSubstringCommonCharacters()
-        lcs()
+//        lcs()
+        pascal()
         
         return
         
@@ -266,5 +267,10 @@ class ViewController: UIViewController {
         outputLabel.text = "\(result1)"
     }
     
+    // MARK: Pascal
+    private func pascal() {
+        let obj = Pascal()
+        obj.getPascal()
+    }
 }
 

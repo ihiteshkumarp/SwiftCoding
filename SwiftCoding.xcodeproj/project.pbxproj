@@ -39,6 +39,7 @@
 		A0F449A520A9939500152ADE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A420A9939500152ADE /* StringExtensions.swift */; };
 		A0F449A720A99F7E00152ADE /* LongestSubstringCommonCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A620A99F7E00152ADE /* LongestSubstringCommonCharacters.swift */; };
 		A0F449A920A9B75800152ADE /* LCS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A820A9B75800152ADE /* LCS.swift */; };
+		A0F449AB20A9ECE300152ADE /* PascalTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449AA20A9ECE300152ADE /* PascalTriangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		A0F449A420A9939500152ADE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		A0F449A620A99F7E00152ADE /* LongestSubstringCommonCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstringCommonCharacters.swift; sourceTree = "<group>"; };
 		A0F449A820A9B75800152ADE /* LCS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCS.swift; sourceTree = "<group>"; };
+		A0F449AA20A9ECE300152ADE /* PascalTriangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PascalTriangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				A03732E320A0785300DD12C2 /* KeepSimpleCodeToRemember.swift */,
+				A0F449AA20A9ECE300152ADE /* PascalTriangle.swift */,
 			);
 			path = SimpleOne;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				A015C8A920A03E7E000E31B4 /* PrintHelloWord.swift in Sources */,
 				A0C0ED2B20A54E8800EB10E9 /* LIS.swift in Sources */,
 				A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */,
+				A0F449AB20A9ECE300152ADE /* PascalTriangle.swift in Sources */,
 				A032BE0C20A7213E00E0D444 /* FrequentlyOccurringItem.swift in Sources */,
 				A0C0ED2020A43A6300EB10E9 /* TreesIdentical.swift in Sources */,
 				A0C0ED1E20A4321600EB10E9 /* CreateBinaryTree.swift in Sources */,
