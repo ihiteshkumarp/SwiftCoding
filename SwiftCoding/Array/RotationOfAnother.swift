@@ -47,23 +47,21 @@ class RotationOfAnother {
         
         var startIndex = 0
         for i in 0 ..< size {
-            
-            if arr1[arr1.index(arr1.startIndex, offsetBy: i)] == arr2[arr2.index(arr2.startIndex, offsetBy: i)] {
+            // Using extension "stringIndex"
+            if arr1[arr1.stringIndex(arr1, index: i)] == arr2[arr2.stringIndex(arr2, index: i)] {
                 startIndex = i
                 break
             }
         }
         
         for i in startIndex  ..< size {
-            if arr1[arr1.index(arr1.startIndex, offsetBy: i - startIndex)] != arr2[arr2.index(arr2.startIndex, offsetBy: i)] {
-//            if arr1[i - startIndex] != arr2[i] {
+            // Using extension "characterAtIndex"
+            if arr1.characterAtIndex(arr1, index: i - startIndex) != arr2.characterAtIndex(arr2, index: i) {
                 return false
             }
         }
         for i in 0 ..< startIndex {
             if arr2[arr2.index(arr2.startIndex, offsetBy: i)] != arr1[arr1.index(arr1.startIndex, offsetBy: size - startIndex + i)] {
-
-//            if arr2[i] != arr1[size - startIndex + i]{
                 return false
             }
         }

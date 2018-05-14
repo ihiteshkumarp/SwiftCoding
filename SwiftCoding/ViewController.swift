@@ -45,12 +45,12 @@ class ViewController: UIViewController {
 //        mirrorTree()
 //        printLeafNodes()
 //        fibonacciNumbers()
-        longestSubsequence()
+//        longestSubsequence()
 //        rotateArray()
 //        firstRepetingChar()
 //        frequentlyOccurringItem()
 //        commonElementsInSortedArrays()
-//        rotationOfAnother()
+        rotationOfAnother()
 //        binarySearch()
         
         return

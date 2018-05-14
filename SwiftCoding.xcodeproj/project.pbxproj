@@ -36,6 +36,7 @@
 		A0CFCC5420A1C16700F04150 /* Largest Sum Contiguous Subarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */; };
 		A0CFCC5920A1C9EA00F04150 /* TreeTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */; };
 		A0F449A320A832C800152ADE /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A220A832C800152ADE /* BinarySearch.swift */; };
+		A0F449A520A9939500152ADE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F449A420A9939500152ADE /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		A0CFCC5320A1C16700F04150 /* Largest Sum Contiguous Subarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Largest Sum Contiguous Subarray.swift"; sourceTree = "<group>"; };
 		A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeTraversal.swift; sourceTree = "<group>"; };
 		A0F449A220A832C800152ADE /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		A0F449A420A9939500152ADE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			children = (
 				A032BE0720A7163F00E0D444 /* FirstRepetingChar.swift */,
 				A032BE0920A71A0B00E0D444 /* FirstNonRepetingChar.swift */,
+				A0F449A420A9939500152ADE /* StringExtensions.swift */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -269,9 +272,9 @@
 		A0CFCC5520A1C9C400F04150 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				A0C0ED1D20A4321600EB10E9 /* CreateBinaryTree.swift */,
 				A0C0ED2120A43D9F00EB10E9 /* CreateTree.swift */,
 				A0CFCC5820A1C9EA00F04150 /* TreeTraversal.swift */,
-				A0C0ED1D20A4321600EB10E9 /* CreateBinaryTree.swift */,
 				A0C0ED1F20A43A6300EB10E9 /* TreesIdentical.swift */,
 				A0C0ED2320A43F6100EB10E9 /* TreesMirror.swift */,
 				A0C0ED2520A45DBD00EB10E9 /* LeafNodes.swift */,
@@ -435,6 +438,7 @@
 				A032BE0E20A7247600E0D444 /* CommonElementsInSortedArrays.swift in Sources */,
 				A03732E420A0785300DD12C2 /* KeepSimpleCodeToRemember.swift in Sources */,
 				A032BE0820A7163F00E0D444 /* FirstRepetingChar.swift in Sources */,
+				A0F449A520A9939500152ADE /* StringExtensions.swift in Sources */,
 				A015C8A720A01109000E31B4 /* MaximunSubArray.swift in Sources */,
 				A0C0ED2620A45DBD00EB10E9 /* LeafNodes.swift in Sources */,
 			);
