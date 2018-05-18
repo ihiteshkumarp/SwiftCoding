@@ -54,7 +54,8 @@ class ViewController: UIViewController {
 //        binarySearch()
 //        longestSubstringCommonCharacters()
 //        lcs()
-        pascal()
+//        pascal()
+        nextGreaterNumber()
         
         return
         
@@ -271,6 +272,14 @@ class ViewController: UIViewController {
     private func pascal() {
         let obj = Pascal()
         obj.getPascal()
+    }
+    
+    // MARK: nextGreaterNumber
+    private func nextGreaterNumber() {
+        let obj = NextGreaterNumber()
+        if let text = inputField.text {
+            outputLabel.text = obj.getNextGreaterNumber(text)
+        }
     }
 }
 
